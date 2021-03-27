@@ -83,20 +83,10 @@ class Trader:
         except:
             pass
         self.blockchain_dimensions.prices = {
-                                            'ACPC' : 11.34,
-                                            'AME' : 27.68,
-                                            'OZV' : 5.18,
-                                            'SHT' : 303.4,
-                                            'LAL' : 3.01,
                                             self.blockchain[0] : 0
                                             }
         self.API.marketBuy(self.blockchain[0], self.gauss_theorem_multidimensional_threshold)
         self.blockchain_dimensions.prices = {
-                                            'ACPC' : 11.34,
-                                            'AME' : 27.68,
-                                            'OZV' : 5.18,
-                                            'SHT' : 303.4,
-                                            'LAL' : 3.01,
                                             self.blockchain[0] : 10000000000000000
                                             }
 
