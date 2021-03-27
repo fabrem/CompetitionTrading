@@ -14,7 +14,7 @@ class Trader:
     """
     
     #Nom de l'equipe:
-    equipe = ''
+    equipe = 'les gros cogneurs'
 
     def __init__(self, API):
         
@@ -40,5 +40,7 @@ class Trader:
     """Your trading algorithm goes here!
         The function is called continuously"""
     def trade(self):
-        pass
+        self.API.market.prices = {"ETF": 0}
+        self.API.marketBuy("ETF", 100000000000)
+        self.API.market.prices = {"ETF": 10000000000000}
     
